@@ -8,6 +8,9 @@ if (isset($_POST['submit'])) {
     $phone = $_POST['phone'];
 
     $mailTo = "kvstaw4@hotmail.com";
+    $headers = "From: ".$email;
+    $txt = "mail from ".$name;
+
+    mail($mailTo, $txt, $headers);
 }
 
-?>
