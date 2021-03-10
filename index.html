@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
+    <link rel="icon" type="image/png" sizes="150x114" href="images/favicon.png">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -31,7 +32,7 @@
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html"><img src="images/logoMine 1(1).png" alt="logo"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span> 
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -58,7 +59,7 @@
               <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Σύγχρονο οδοντιατρείο σε ήρεμο περιβάλλον.</h1>
               <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Προσφέρουμε σύγχρονη οδοντιατρική περίθαλψη 
                δίνοντας έμφαση στην προληπτική και αποκαταστατική οδοντιατρική.</p>
-              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Βιογραφικό</a></p>
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#about-us" class="btn btn-primary px-4 py-3">Βιογραφικό</a></p>
             </div>
           </div>
         </div>
@@ -71,7 +72,7 @@
             <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Επιτύχετε το χαμόγελο που πάντα επιθυμούσατε.</h1>
               <p class="mb-4">Εξασκούμε ένα πλήρες φάσμα γενικής και αισθητικής οδοντιατρικής.</p>
-              <p><a href="#" class="btn btn-primary px-4 py-3">Βιογραφικό</a></p>
+              <p><a href="#about-us" class="btn btn-primary px-4 py-3">Βιογραφικό</a></p>
             </div>
           </div>
         </div>
@@ -84,7 +85,7 @@
             <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Εφαρμογή σύγχρονων μεθόδων απο το έμπειρο προσωπικό μας.</h1>
               <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Παρέχουμε τις πιο σύγχρονες μεθόδους οδοντιατρικής φροντίδας με συνεχή μελέτη της οδοντιατρικής τεχνολογίας.</p>
-              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Βιογραφικό</a></p>
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#about-us" class="btn btn-primary px-4 py-3">Βιογραφικό</a></p>
             </div>
           </div>
         </div>
@@ -114,7 +115,7 @@
     			</div>
     			<div class="col-md-6 color-3 p-4">
     				<h3 class="mb-2">Αίτημα Για Ραντεβού</h3>
-    				<form class="appointment-form" name="contact" method="POST" data-netlify="true">
+    				<form class="appointment-form" name="contact" action="POST" data-netlify="true">
 	            <div class="row">
 	            	<div class="col-sm-4">
 	                <div class="form-group">
@@ -131,13 +132,13 @@
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-user"></span></div>
-			              <input type="text" class="form-control" id="appointment_name" name="appointment_name" placeholder="Όνομα">
+			              <input type="text" class="form-control" id="appointment_name" name="name" placeholder="Όνομα">
 			            </div>
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-paper-plane"></span></div>
-			              <input type="text" class="form-control" id="appointment_email" name="appointment_email" placeholder="Email">
+			              <input type="text" class="form-control" id="appointment_email" name="email" placeholder="Email">
 			            </div>
 	              </div>
 	            </div>
@@ -145,13 +146,13 @@
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="ion-ios-calendar"></span></div>
-	                  <input type="text" class="form-control appointment_date" name="appointment_date" placeholder="Ημερομηνία">
+	                  <input type="text" class="form-control appointment_date" name="date" placeholder="Ημερομηνία">
 	                </div>    
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="ion-ios-clock"></span></div>
-	                  <input type="text" class="form-control appointment_time" name="appointment_time" placeholder="Ώρα">
+	                  <input type="text" class="form-control appointment_time" name="time" placeholder="Ώρα">
 	                </div>
 	              </div>
 	              <div class="col-sm-4">
@@ -166,14 +167,21 @@
 	              <input type="submit" name="submit" value="Αποστολή Αιτήματος" class="btn btn-primary">
 	            </div>
 	          </form>
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+              <h4>
+                  Error
+              </h4>
+              Sorry there was an error sending your form. 
+          </div>
+          <div id="success_message" style="width:100%; height:100%; display:none; ">
+          <h2>Success! Your Message was Sent Successfully.</h2>
+          </div>
     			</div>
     		</div>
     	</div>
     </section>
   
-    <section class="home-slider owl-carousel">
-      
-    </section>
+    
 
 		<section class="ftco-section" id="about-us">
     	<div class="container">
@@ -277,50 +285,70 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/original_foto1.jpg);"></div>
       				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Κουκουλάκης Σταύρος</a></h3>
+      					<h3><a href="teacher-single.html">Σταύρος Κουκουλάκης</a></h3>
       					<span class="position">Οδοντίατρος</span>
       					<div class="text">
 	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
-	        				
+	        				<ul class="ftco-social">
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
+			              <li class="ftco-animate"><a href="https://www.facebook.com/stay.kokot/" target="_blank"><span class="icon-facebook"></span></a></li>
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li> -->
+			            </ul>
 	        			</div>
       				</div>
         		</div>
         	</div>
         	<div class="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate">
         		<div class="staff">
-      				<div class="img mb-4" style="background-image: url(images/original_foto2.jpg); "></div>
+      				<div class="img mb-4" style="background-image: url(images/original_foto2.png);"></div>
       				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Κουκουλάκη Μαρία</a></h3>
+      					<h3><a href="teacher-single.html">Μαρία Κουκουλάκη</a></h3>
       					<span class="position">Οδοντίατρος</span>
       					<div class="text">
 	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
-	        				
+	        				<ul class="ftco-social">
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
+			              <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100015274025336" target="_blank"><span class="icon-facebook"></span></a></li>
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li> -->
+			            </ul>
 	        			</div>
       				</div>
         		</div>
         	</div>
         	<div class="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate">
         		<div class="staff">
-      				<div class="img mb-4" style="background-image: url(images/original_foto3.jpg);"></div>
+      				<div class="img mb-4" style="background-image: url(images/original_foto3.png);"></div>
       				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Κουκουλάκη Σαββίνα</a></h3>
+      					<h3><a href="teacher-single.html">Σαββίνα Κουκουλάκη</a></h3>
       					<span class="position">Οδοντίατρος</span>
       					<div class="text">
 	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
-	        				
+	        				<ul class="ftco-social">
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
+			              <li class="ftco-animate"><a href="https://www.facebook.com/koukoulakisavina" target="_blank"><span class="icon-facebook"></span></a></li>
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li> -->
+			            </ul>
 	        			</div>
       				</div>
         		</div>
         	</div>
         	<div class="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate">
         		<div class="staff">
-      				<div class="img mb-4" style="background-image: url(images/person_8.jpg);"></div>
+      				<div class="img mb-4" style="background-image: url(images/original_foto4.png);"></div>
       				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Ivan Dorchsner</a></h3>
-      					<span class="position">System Analyst</span>
+      					<h3><a href="teacher-single.html">Χαρά </a></h3>
+      					<span class="position">Βοηθός Οδοντίατρου</span>
       					<div class="text">
 	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
-	        				
+	        				<ul class="ftco-social">
+			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li> -->
+			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -332,6 +360,41 @@
         	</div>
         </div>
       </div>
+    </section>
+
+    <section class="ftco-gallery">
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-2.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-3.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a class="gallery img d-flex align-items-center" style="background-image: url(images/gallery-4.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-search"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
     </section>
 
     <section class="ftco-section" id="blog">
@@ -408,13 +471,11 @@
           <div class="col-md-3">
             <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
           </div>
-          <div class="col-md-3">
-            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-          </div>
+          
         </div>
         <div class="row block-9">
           <div class="col-md-6 pr-md-5">
-            <form action="#">
+            <form action="POST" data-netlify="true">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Όνομα">
               </div>
@@ -425,10 +486,10 @@
                 <input type="text" class="form-control" placeholder="Θέμα">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Μύνημα"></textarea>
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Μήνυμα"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Αποστολή Μυνήματος" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Αποστολή Μηνύματος" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
@@ -454,10 +515,8 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script>--> Ηράκλειο Κρητης | Οδοντιατρείο Κουκουλάκη 2021
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <p>Ηράκλειο Κρητης | Οδοντιατρείο Κουκουλάκη 2021</p>
+            
           </div>
         </div>
       </div>
@@ -473,16 +532,16 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalRequestLabel">Make an Appointment</h5>
+          <h5 class="modal-title" id="modalRequestLabel">Αίτημα Για Ραντεβού</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <form action="#">
+          <form action="POST" data-netlify="true">
             <div class="form-group">
               <!-- <label for="appointment_name" class="text-black">Full Name</label> -->
-              <input type="text" class="form-control" id="appointment_name" placeholder="Full Name">
+              <input type="text" class="form-control" id="appointment_name" placeholder="Ονοματεπώνυμο">
             </div>
             <div class="form-group">
               <!-- <label for="appointment_email" class="text-black">Email</label> -->
@@ -492,13 +551,13 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <!-- <label for="appointment_date" class="text-black">Date</label> -->
-                  <input type="text" class="form-control appointment_date" placeholder="Date">
+                  <input type="text" class="form-control appointment_date" placeholder="Ημερομηνία">
                 </div>    
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <!-- <label for="appointment_time" class="text-black">Time</label> -->
-                  <input type="text" class="form-control appointment_time" placeholder="Time">
+                  <input type="text" class="form-control appointment_time" placeholder="Ώρα">
                 </div>
               </div>
             </div>
@@ -506,10 +565,10 @@
 
             <div class="form-group">
               <!-- <label for="appointment_message" class="text-black">Message</label> -->
-              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Μήνυμα"></textarea>
             </div>
             <div class="form-group">
-              <input type="submit" value="Make an Appointment" class="btn btn-primary">
+              <input type="submit" value="Αποστολή αιτήματος" class="btn btn-primary">
             </div>
           </form>
         </div>
@@ -518,7 +577,7 @@
     </div>
   </div>
 
-
+  <script src="contact-form/form.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
