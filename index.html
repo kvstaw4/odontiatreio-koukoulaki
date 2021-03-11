@@ -538,26 +538,26 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="POST" data-netlify="true">
+          <form method="post" action="feedback_form/send_mail.php">
             <div class="form-group">
               <!-- <label for="appointment_name" class="text-black">Full Name</label> -->
-              <input type="text" class="form-control" id="appointment_name" placeholder="Ονοματεπώνυμο">
+              <input type="text" class="form-control" id="appointment_name" name="name" placeholder="Ονοματεπώνυμο">
             </div>
             <div class="form-group">
               <!-- <label for="appointment_email" class="text-black">Email</label> -->
-              <input type="text" class="form-control" id="appointment_email" placeholder="Email">
+              <input type="text" class="form-control" id="appointment_email" name="email" placeholder="Email">
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <!-- <label for="appointment_date" class="text-black">Date</label> -->
-                  <input type="text" class="form-control appointment_date" placeholder="Ημερομηνία">
+                  <input type="text" class="form-control appointment_date" name="date" placeholder="Ημερομηνία">
                 </div>    
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <!-- <label for="appointment_time" class="text-black">Time</label> -->
-                  <input type="text" class="form-control appointment_time" placeholder="Ώρα">
+                  <input type="text" class="form-control appointment_time" name="time" placeholder="Ώρα">
                 </div>
               </div>
             </div>
@@ -565,7 +565,7 @@
 
             <div class="form-group">
               <!-- <label for="appointment_message" class="text-black">Message</label> -->
-              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Μήνυμα"></textarea>
+              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" name="comments" placeholder="Μήνυμα"></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Αποστολή αιτήματος" class="btn btn-primary">
