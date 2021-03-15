@@ -8609,7 +8609,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-brand {
-  background: url("/images/logoWhite.png") no-repeat;
+  background: url("../images/logowhite.png") no-repeat;
     background-size: 100px 50px;
     display: block;
     width: 100px;
@@ -8811,7 +8811,7 @@ h1, h2, h3, h4, h5,
   transition: 0.3s all ease-out;
 }
 .ftco-navbar-light.scrolled .navbar-brand {
-  background: url("/images/logoBlack.png") no-repeat;
+  background: url("../images/logoBlack.png") no-repeat;
     background-size: 100px 50px;
     display: block;
     width: 100px;
