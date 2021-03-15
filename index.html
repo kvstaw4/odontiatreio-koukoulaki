@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Οδοντιατρείο Κουκουλάκη</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1R2JM61M2G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1R2JM61M2G');
+    </script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Οδοντιατρείο Κουκουλάκη - Οδοντίατρος στο Ηράκλειο Κρήτης</title>
+    <meta name="description" content="Παρέχουμε οδοντιατρικές υπηρεσίες στο Ηράκλειο Κρήτης απο το 1981">
+    <meta name="keywords" content="Οδοντίατρος, Οδοντιατρείο, Ηράκλειο, Κρήτη">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
 
@@ -30,7 +42,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="images/logoMine 1(1).png" alt="logo"></a>
+	      <a class="navbar-brand" href="index.html"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 
 	      </button>
@@ -115,13 +127,13 @@
     			</div>
     			<div class="col-md-6 color-3 p-4">
     				<h3 class="mb-2">Αίτημα Για Ραντεβού</h3>
-    				<form class="appointment-form" action="mailto:kvstaw4@hotmail.com" method="POST" enctype="multipart/form-data">
+    				<form class="appointment-form" method="post" action="feedback_form/send_mail.php" enctype="multipart/form-data">
 	            <div class="row">
 	            	<div class="col-sm-4">
 	                <div class="form-group">
 			              <div class="select-wrap">
                       <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
+                      <select name="client" id="client" class="form-control">
                       	<option value="">Νέος Πελάτης</option>
                         <option value="">Υπάρχον Πελατης</option>
                         
@@ -132,13 +144,13 @@
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-user"></span></div>
-			              <input type="text" class="form-control" id="appointment_name" name="name" placeholder="Όνομα">
+			              <input type="text" class="form-control" id="appointment_name" name="first_name" placeholder="Όνομα">
 			            </div>
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-paper-plane"></span></div>
-			              <input type="text" class="form-control" id="appointment_email" name="email" placeholder="Email">
+			              <input type="text" class="form-control" id="appointment_email" name="email_address" placeholder="Email">
 			            </div>
 	              </div>
 	            </div>
@@ -167,15 +179,7 @@
 	              <input type="submit" name="submit" value="Αποστολή Αιτήματος" class="btn btn-primary">
 	            </div>
 	          </form>
-            <div id="error_message" style="width:100%; height:100%; display:none; ">
-              <h4>
-                  Error
-              </h4>
-              Sorry there was an error sending your form. 
-          </div>
-          <div id="success_message" style="width:100%; height:100%; display:none; ">
-          <h2>Success! Your Message was Sent Successfully.</h2>
-          </div>
+            
     			</div>
     		</div>
     	</div>
@@ -268,7 +272,47 @@
           </div>
         </div>
       </div>
-      
+      <div class="container-wrap mt-5">
+      	<div class="row d-flex no-gutters">
+      		<div class="col-md-6 img" style="background-image: url(images/about-2.jpg);">
+      		</div>
+      		<div class="col-md-6 d-flex">
+      			<div class="about-wrap">
+      				<div class="heading-section heading-section-white mb-5 ftco-animate">
+		            <h2 class="mb-2">Οι οδοντιατρικές μας υπηρεσίες έχουν την δική μας προσωπική πινελιά και σας προσφέρουμε</h2>
+		            
+		          </div>
+      				<div class="list-services d-flex ftco-animate">
+      					<div class="icon d-flex justify-content-center align-items-center">
+      						<span class="icon-check2"></span>
+      					</div>
+      					<div class="text">
+	      					<h3>Έμπειρο και ικανό προσωπικό</h3>
+	      					<p>Απο το 1981 προσφέρουμε με επιτυχία της υπηρεσίες μας</p>
+      					</div>
+      				</div>
+      				<div class="list-services d-flex ftco-animate">
+      					<div class="icon d-flex justify-content-center align-items-center">
+      						<span class="icon-check2"></span>
+      					</div>
+      					<div class="text">
+	      					<h3>Σύγχρονες εγκαταστάσεις</h3>
+	      					<p>Όλα τα υλικά και οι εγκαταστάσεις μας ακολουθούν τις σύγχρονες τάσεις της τεχνολογίας.</p>
+      					</div>
+      				</div>
+      				<div class="list-services d-flex ftco-animate">
+      					<div class="icon d-flex justify-content-center align-items-center">
+      						<span class="icon-check2"></span>
+      					</div>
+      					<div class="text">
+	      					<h3>Άνετο και ήρεμο περιβάλλον</h3>
+	      					<p>Το ιατρείο μας βρίσκεται σε μια ήσυχη γειτονία και σας παρέχει άνεση και ηρεμία.</p>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
     </section>
 
 
@@ -277,7 +321,7 @@
       	<div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <h2 class="mb-3">Το Προσωπικό Μας</h2>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences</p>
+            
           </div>
         </div>
         <div class="row">
@@ -288,7 +332,7 @@
       					<h3><a href="teacher-single.html">Σταύρος Κουκουλάκης</a></h3>
       					<span class="position">Οδοντίατρος</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
+	        				<p>Γεννήθηκε στο Ηράκλειο Κρήτης και το 1981 αποφοίτησε απο την οδοντιατρική σχολή Αθηνών. Στη συνέχεια άνοιξε οδοντιατρείο στο Ηράκλειο Κρήτης, σε συνεργασία με την Μαρία Κουκουλάκη, όπου και εργάζεται μέχρι και σήμερα.Έχει παρακολουθήσει πληθώρα σεμινάρίων σε όλη την γκάμα των οδοντιατρικών πράξεων.</p>
 	        				<ul class="ftco-social">
 			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
 			              <li class="ftco-animate"><a href="https://www.facebook.com/stay.kokot/" target="_blank"><span class="icon-facebook"></span></a></li>
@@ -306,7 +350,7 @@
       					<h3><a href="teacher-single.html">Μαρία Κουκουλάκη</a></h3>
       					<span class="position">Οδοντίατρος</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
+	        				<p>Γεννήθηκε στην Αθήνα και το 1981 αποφοίτησε απο την οδοντιατρική σχολή Αθηνών. Στη συνέχεια άνοιξε οδοντιατρείο στο Ηράκλειο Κρήτης, σε συνεργασία με τον Σταύρο Κουκουλάκη, όπου και εργάζεται μέχρι και σήμερα. Έχει παρακολουθήσει πληθώρα σεμιναρίων σε όλη την γκάμα των οδοντιατρικών πράξεων.</p>
 	        				<ul class="ftco-social">
 			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
 			              <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100015274025336" target="_blank"><span class="icon-facebook"></span></a></li>
@@ -324,7 +368,7 @@
       					<h3><a href="teacher-single.html">Σαββίνα Κουκουλάκη</a></h3>
       					<span class="position">Οδοντίατρος</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
+	        				<p>Γεννήθηκε στο Ηράκλειο Κρήτης και το 2011 αποφοίτησε απο την οδοντιατρική σχολή Θεσσαλονίκης. Απο το 2011 εργάζεται σε ιδιωτικό οδοντιατρείο. Έχει παρακολουθήσει σεμινάρια επιμορφωτικά και πανελλήνια συνέδρια για εμφυτεύματα,αισθητική οδοντιατρική κ.α.</p>
 	        				<ul class="ftco-social">
 			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
 			              <li class="ftco-animate"><a href="https://www.facebook.com/koukoulakisavina" target="_blank"><span class="icon-facebook"></span></a></li>
@@ -339,10 +383,10 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/original_foto4.png);"></div>
       				<div class="info text-center">
-      					<h3><a href="teacher-single.html">Χαρά </a></h3>
+      					<h3><a href="teacher-single.html">Χαρά Περάκη</a></h3>
       					<span class="position">Βοηθός Οδοντίατρου</span>
       					<div class="text">
-	        				<p>Far far away, behind the word mountains, far from the countries Vokalia</p>
+	        				<p>Γεννήθηκε στο Ηράκλειο Κρήτης και το 2011 αποφοίτησε απο την οδοντιατρική σχολή Θεσσαλονίκης. Απο το 2011 εργάζεται στο οδοντιατρείο μας και παρέχει πολύτιμη βοήθεια σε κάθε είδος περιστατικού.</p>
 	        				<ul class="ftco-social">
 			              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -356,7 +400,7 @@
         </div>
         <div class="row  mt-5 justify-conten-center">
         	<div class="col-md-8 ftco-animate">
-        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero accusantium sunt sit aliquam ipsum molestias autem perferendis, incidunt cumque necessitatibus cum amet cupiditate, ut accusamus. Animi, quo. Laboriosam, laborum.</p>
+        		
         	</div>
         </div>
       </div>
@@ -402,7 +446,7 @@
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <h2 class="mb-2">Άρθρα</h2>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            
           </div>
         </div>
         <div class="row">
@@ -412,11 +456,11 @@
               </a>
               <div class="text d-flex py-4">
                 <div class="meta mb-3">
-                  <div><a href="#">Jan. 10, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="blog-single.html">Jan. 10, 2021</a></div>
+                  <div><a href="blog-single.html">Admin</a></div>
                 </div>
                 <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Αισθητική Οδοντιατρική </a></h3>
+	                <h3 class="heading"><a href="blog-single.html">Αισθητική Οδοντιατρική </a></h3>
 	              </div>
               </div>
             </div>
@@ -427,11 +471,11 @@
               </a>
               <div class="text d-flex py-4">
                 <div class="meta mb-3">
-                  <div><a href="#">Jan. 10, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="blog-single.html">Jan. 10, 2021</a></div>
+                  <div><a href="blog-single.html">Admin</a></div>
                 </div>
                 <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Γενική Οδοντιατρική </a></h3>
+	                <h3 class="heading"><a href="blog-single.html">Γενική Οδοντιατρική </a></h3>
 	              </div>
               </div>
             </div>
@@ -442,11 +486,11 @@
               </a>
               <div class="text d-flex py-4">
                 <div class="meta mb-3">
-                  <div><a href="#">Jan. 10, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
+                  <div><a href="blog-single.html">Jan. 10, 2021</a></div>
+                  <div><a href="blog-single.html">Admin</a></div>
                 </div>
                 <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Εμφυτεύματα</a></h3>
+	                <h3 class="heading"><a href="blog-single.html">Εμφυτεύματα</a></h3>
 	              </div>
               </div>
             </div>
@@ -469,27 +513,27 @@
             <p><span>Τηλέφωνο:</span> <a href="tel://00302810281151">+30 2810 28 11 51</a></p>
           </div>
           <div class="col-md-3">
-            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            <p><span>Email:</span> <a href="mailto:dentistgroup@yahoo.gr">dentistgroup@yahoo.gr</a></p>
           </div>
           
         </div>
         <div class="row block-9">
           <div class="col-md-6 pr-md-5">
-            <form action="mailto:kvstaw4@hotmail.com" method="POST" enctype="multipart/form-data">
+            <form method="post" action="feedback_form/send_mail.php" enctype="multipart/form-data">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Όνομα">
+                <input type="text" class="form-control" name="first_name" placeholder="Όνομα">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email">
+                <input type="text" class="form-control" name="email_address" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Θέμα">
+                <input type="text" class="form-control" name="subject" placeholder="Θέμα">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Μήνυμα"></textarea>
+                <textarea name="comments" id="" cols="30" rows="7" class="form-control" placeholder="Μήνυμα"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Αποστολή Μηνύματος" name="message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Αποστολή Μηνύματος"  class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
@@ -507,16 +551,83 @@
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
-          
-           
-          
-         
-          
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2"><img src="images/logoWhite.png" alt="odontiatreio Koukoulaki logo"></h2>
+              <p>Απο το 1981 προσφέρουμε οδοντιατρική περίθαλψη με επιτυχία σε παιδιά και ενήλικες.</p>
+            </div>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+              
+              <li class="ftco-animate"><a href="https://www.facebook.com/koukoulakisavina" target="_blank"><span class="icon-facebook"></span></a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Σύνδεσμοι</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Αρχική</a></li>
+                <li><a href="#about-us" class="py-2 d-block">Βιογραφικό</a></li>
+                <li><a href="#services" class="py-2 d-block">Υπηρεσίες</a></li>
+                <li><a href="#blog" class="py-2 d-block">Άρθρα</a></li>
+                <li><a href="#contact" class="py-2 d-block">Επικοινωνία</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 pr-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Πρόσφατα Άρθρα</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/blog-cosmetic.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="blog-single.html">Αισθητική Οδοντιατρική</a></h3>
+                  <div class="meta">
+                    <div><a href="blog-single.html"><span class="icon-calendar"></span> Jan. 10, 2021</a></div>
+                    <div><a href="blog-single.html"><span class="icon-person"></span> Admin</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/blog-general.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="blog-single.html">Γενική Οδοντιατρική </a></h3>
+                  <div class="meta">
+                    <div><a href="blog-single.html"><span class="icon-calendar"></span> Jan. 10, 2021</a></div>
+                    <div><a href="blog-single.html"><span class="icon-person"></span> Admin</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/blog-implants.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="blog-single.html">Εμφυτεύματα</a></h3>
+                  <div class="meta">
+                    <div><a href="blog-single.html"><span class="icon-calendar"></span> Jan. 10, 2021</a></div>
+                    <div><a href="blog-single.html"><span class="icon-person"></span> Admin</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Επικοινωνία</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text"><a href="https://goo.gl/maps/gnirDh5zNhbozQdB7" target="_blank">Μονής Καρδιωτίσσης 49, Ηράκλειο Κρήτης, Ελλάδα</a></span></li>
+	                <li><a href="tel:00302810281151"><span class="icon icon-phone"></span><span class="text">+30 2810 28 11 51</span></a></li>
+	                <li><a href="mailto:dentistgroup@yahoo.gr"><span class="icon icon-envelope"></span><span class="text">dentistgroup@yahoo.gr</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>Ηράκλειο Κρητης | Οδοντιατρείο Κουκουλάκη 2021</p>
-            
+
           </div>
         </div>
       </div>
@@ -577,7 +688,7 @@
     </div>
   </div>
 
-  <script src="contact-form/form.js"></script>
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -592,9 +703,8 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
   </body>
 </html>
+
