@@ -2258,8 +2258,9 @@ fieldset:disabled a.btn {
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #212529;
-  background-color: #4ac7ea;
-  border-color: #3fc3e8;
+  background-color: lightgray;
+  border-color: lightgray;
+  border-radius: 0px;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.5);
@@ -2985,11 +2986,13 @@ input[type=button].btn-block {
 .btn-group > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-radius: 0;
 }
 .btn-group > .btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  border-radius: 0;
 }
 
 .dropdown-toggle-split {
@@ -8609,7 +8612,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-brand {
-  background: url("../images/logowhite.png") no-repeat;
+  background: url("/images/logowhite.png") no-repeat;
     background-size: 100px 50px;
     display: block;
     width: 100px;
@@ -8798,7 +8801,14 @@ h1, h2, h3, h4, h5,
   padding-bottom: 0.9rem !important;
   color: #000 !important;
 }
+.btn-lang {
+  background-color: transparent;
+  height: 35px;
+}
 
+.btn-lang img {
+  height: 20px;
+}
 
 .ftco-navbar-light.scrolled .nav-link.active {
   color: #2f89fc !important;
@@ -8811,7 +8821,7 @@ h1, h2, h3, h4, h5,
   transition: 0.3s all ease-out;
 }
 .ftco-navbar-light.scrolled .navbar-brand {
-  background: url("../images/logoBlack.png") no-repeat;
+  background: url("../images/logoblack.png") no-repeat;
     background-size: 100px 50px;
     display: block;
     width: 100px;
